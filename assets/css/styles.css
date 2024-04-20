@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #00ffff;
+    --red-color: #ff0000;
+    --dark-red-color: #c50303;
+    --green-color: #00ff00;
+    --dark-green-color: #22d022;
+    --text-color: #4deaff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--primary-color);
+    font-family: 'Dancing Script', sans-serif;
+
+}
+section.main-screen{
+    --paddingTop: 35rem;
+    padding-top: var(--paddingTop);
+    padding-bottom: 35rem;
+}
+section.main-screen div.buttons{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+section.main-screen h1.main-title{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+}
+
+section.main-screen .btn{
+    margin: 0.5rem;
+    display: inline;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    padding: 4rem 10rem;
+}
+section.main-screen .btn-yes{
+    --fontSize: 3rem;
+    background-color: var(--green-color);
+    font-size: var(--fontSize);
+    
+}
+section.main-screen .btn-yes:hover{
+    background-color: var(--dark-green-color);
+}
+section.main-screen .btn-no{
+    font-size: 3rem;
+    background-color: var(--red-color);
+}
+section.main-screen .btn-no:hover{
+    background-color: var(--dark-red-color);
+}
+section.text-screen{
+    background-image: url(../img/main-img.jpeg);
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+    padding-bottom: 4rem;
+}
+
+section.text-screen h1.main-title{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+section.text-screen div.main-text{
+    color: var(--text-color);
+    font-size: 4rem;
+    margin: 0 7rem;
+    font-weight: bold;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+}
+
+section.text-screen div.main-text h2{
+    font-size: 5rem;
+}
+
+.invisible{
+    display: none;
+}
